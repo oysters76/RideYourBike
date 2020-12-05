@@ -1,0 +1,98 @@
+body{
+  font-family: ridebikefont;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  width:80vw;
+  height: 100%;
+}
+
+img{
+  width: 80vw;
+  height: 100%;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
+
+.login-panel{
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255,253,21);
+  background: linear-gradient(16deg, rgba(255,253,21,1) 0%, rgba(255,225,25,1) 52%, rgba(255,253,21,1) 100%);
+  box-shadow:  15px 15px 50px #fffd15;
+}
+
+#heading{
+  position: absolute;
+  font-size: 4vw;
+  font-weight: bold;
+  padding-left: 6vw;
+  padding-top: 8vw;
+  letter-spacing: 0.5vw;
+}
+
+#subtext{
+  position: absolute;
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding-left: 55vw;
+  padding-top: 41vw;
+  word-wrap: break-word;
+  width: 20vw;
+  letter-spacing: 0.2vw;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw;
+}
+
+.login-panel input{
+  margin: 0.5vw;
+  padding: 1.5vw;
+  border: 1px 1px solid lightblue;
+  border-radius: 10px;
+
+}
+
+button{
+  margin: 0.5vw;
+  padding: 0.5vw;
+  width: 60%;
+  text-transform: uppercase;
+}
+
+*:focus {
+    outline: none;
+}
+
+form label{
+  letter-spacing: 0.2vw;
+  padding:1vw;
+}
+
+.login-panel input:focus{
+  box-shadow: 2px 2px 20px lightblue;
+  border:none;
+}
