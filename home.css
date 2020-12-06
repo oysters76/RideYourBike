@@ -1,0 +1,99 @@
+
+body{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  font-family: ridebikefont;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+navbar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 5vh;
+  justify-content: space-around;
+  padding-top:1vw;
+  align-items: center;
+  z-index: 2;
+  background-color: white;
+}
+
+navbar label{
+  flex-basis: 100rem;
+  text-align: left;
+  border: 1px solid white;
+  font-size: 1.5vw;
+  padding-left: 1vw;
+}
+
+navbar img{
+  width: 2.5vw;
+  height: 5vh;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 0.5vw;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100%;
+  overflow: auto;
+}
+
+.card{
+  display: flex;
+  width: 18vw;
+  height: 22vh;
+  background-color: grey;
+  margin: 1vw;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.card img{
+  width:100%;
+  height: 100%;
+}
+
+.card label{
+  position: absolute;
+  text-align: center;
+  color: white;
+  padding-top: 4vw;
+  font-size: 2.1vw;
+  word-wrap: break-word;
+  width: 20%;
+}
+
+.overlay{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #008CBA;
+  opacity: 0.9;
+  height: 0;
+  width: 18vw;
+  transition: .2s ease;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.overlay label{
+  width: 100%;
+  text-align: center;
+  font-size:2vw;
+}
+
+.card:hover .overlay{
+  height:22vh;
+  visibility: visible;
+}

@@ -4,6 +4,7 @@ body{
   margin: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .container{
@@ -35,9 +36,6 @@ img{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(255,253,21);
-  background: linear-gradient(16deg, rgba(255,253,21,1) 0%, rgba(255,225,25,1) 52%, rgba(255,253,21,1) 100%);
-  box-shadow:  15px 15px 50px #fffd15;
 }
 
 #heading{
@@ -47,6 +45,7 @@ img{
   padding-left: 6vw;
   padding-top: 8vw;
   letter-spacing: 0.5vw;
+  text-shadow: 10px 2px #FEFC11, 10px 6px 1px black;
 }
 
 #subtext{
@@ -58,6 +57,8 @@ img{
   word-wrap: break-word;
   width: 20vw;
   letter-spacing: 0.2vw;
+  color:white;
+  text-shadow: 2px 3px black;
 }
 
 form{
@@ -81,6 +82,10 @@ button{
   padding: 0.5vw;
   width: 60%;
   text-transform: uppercase;
+  background: white;
+  font-family: ridebikefont;
+  border-radius: 10px;
+  font-size: 1.5vw;
 }
 
 *:focus {
@@ -90,9 +95,5 @@ button{
 form label{
   letter-spacing: 0.2vw;
   padding:1vw;
-}
-
-.login-panel input:focus{
-  box-shadow: 2px 2px 20px lightblue;
-  border:none;
+  font-size: 2vw;
 }
