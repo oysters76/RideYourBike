@@ -78,7 +78,7 @@ navbar img{
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: #008CBA;
+  background-color: #FEFC11;
   opacity: 0.9;
   height: 0;
   width: 18vw;
@@ -89,6 +89,7 @@ navbar img{
 
 .overlay label{
   width: 100%;
+  color: black;
   text-align: center;
   font-size:2vw;
 }
