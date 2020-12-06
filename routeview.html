@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="routeview.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+   <script
+     src="https://maps.googleapis.com/maps/api/js?key=YOURKEY&callback=initMap&libraries=&v=weekly"
+     defer
+   ></script>
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        background-color:#12efef;
+        height: 60vh;
+        z-index:2;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: ridebikefont;
+      }
+    </style>
+    <script>
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: -34.397, lng: 150.644 },
+          zoom: 8,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="container" id='holder'>
+        <h2>Colarado Springs</h2>
+        <div class="stats">
+          <div class="stat-card">
+            <i class="material-icons">star</i>
+            <label>4</label>
+          </div>
+          <div class="stat-card">
+            <i class="material-icons">straighten</i>
+            <label>20kms</label>
+          </div>
+          <div class="stat-card">
+            <i class="material-icons">timer</i>
+            <label>2 Days</label>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer velit ipsum, viverra vestibulum bibendum vitae, condimentum ut leo. Nam sed urna vel tellus mollis facilisis. Nullam et tortor ut lectus pretium congue sit amet eu sem. Nullam vel aliquet neque, eget tempus ex. Duis aliquam erat nec lorem consequat, sed blandit leo auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque vestibulum pretium rhoncus. Aliquam bibendum pulvinar augue, eu iaculis massa tempus ac.
+
+Vivamus et maximus sapien, ac semper velit. Sed sapien elit, vehicula id augue vel, efficitur sollicitudin est. Phasellus aliquet, justo vitae ultricies semper, eros massa placerat augue, in hendrerit nisl ex et magna. Nulla vehicula odio id laoreet placerat. Aliquam et eros pulvinar mi eleifend aliquet. Vestibulum fermentum at mauris ac molestie. Nulla facilisi. Vestibulum iaculis metus ac finibus imperdiet. Nulla nulla dui, ultrices eu nunc at, dignissim convallis augue. Vivamus vulputate aliquam sapien, nec auctor leo imperdiet id. Curabitur eros quam, consectetur ac ultrices eget, hendrerit non velit. Curabitur enim tortor, pretium at blandit at, tincidunt sit amet justo. Fusce a aliquet quam. Donec sollicitudin porta sem, ut pharetra erat luctus et.
+
+Quisque sit amet augue vel arcu egestas rhoncus sed nec orci. Ut pretium augue vitae odio faucibus viverra quis at arcu. Praesent viverra enim euismod diam porttitor, non efficitur nibh placerat. Proin sed dui at erat fermentum tristique. Donec nec erat tincidunt, varius sapien nec, cursus purus. Phasellus commodo, nisi eu ultricies porta, lorem arcu dapibus odio, vel volutpat lectus velit eu nunc. Fusce est magna, sagittis eu lacinia faucibus, hendrerit ut sem. Cras ac efficitur odio, quis varius nisl. Nunc sit amet purus vitae elit rutrum venenatis eget ac nulla. Quisque id massa congue, aliquam mauris at, suscipit massa. Proin nec lorem ac tortor tincidunt vestibulum. Quisque ut nisl eget nunc faucibus faucibus in ac velit.
+
+Phasellus ut ipsum consectetur velit vulputate luctus a sit amet massa. Mauris eu pulvinar nunc. In fringilla sagittis enim at tempor. Pellentesque eu magna dignissim, euismod nunc vel, dapibus justo. Pellentesque vitae arcu et urna volutpat ornare a quis nulla. Phasellus vehicula non sapien eget ultricies. Nunc tristique, nisi quis aliquet accumsan, leo elit placerat lorem, nec aliquet felis ligula eget nisi. Nunc vestibulum mi vel massa ultrices, vel scelerisque quam blandit. Phasellus eu aliquet dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis pellentesque felis. Cras malesuada porttitor nulla ut efficitur.
+
+Praesent volutpat semper lectus, euismod sodales neque blandit id. Nam facilisis convallis lorem ut porta. In hac habitasse platea dictumst. Duis iaculis nulla a elit cursus placerat. Integer ut metus mauris. Integer dolor sapien, facilisis sit amet suscipit a, ullamcorper et quam. Cras porttitor metus sem, eu vehicula sapien consequat non. Phasellus tempor libero dui, et commodo massa volutpat a. Cras nec imperdiet dui. Aenean consectetur sit amet ligula ut ultricies. Donec augue orci, tincidunt id eleifend sed, feugiat ac turpis. Vivamus turpis nunc, commodo in nibh et, laoreet dapibus purus. Sed eu lacus leo. Sed congue ex eget lectus varius, in sollicitudin nibh imperdiet. Phasellus odio ante, malesuada nec nunc non, posuere condimentum metus.
+        </p>
+        <h3>All Comments</h3>
+        <div class="comment-container">
+          <div class="your-comment">
+            <img src="profile.jpeg" />
+            <textarea name="name" placeholder="Share Your Thoughts"></textarea>
+          </div>
+          <div class="comment-card">
+            <img src="profile.jpeg"/>
+            <label>Phasellus ut ipsum consectetur velit vulputate luctus a sit amet massa. Mauris eu pulvinar nunc. In fringilla sagittis enim at tempor. Pellentesque eu magna dignissim, euismod nunc vel, dapibus justo. Pellentesque vitae arcu et urna volutpat ornare a quis nulla. Phasellus vehicula non sapien eget ultricies. Nunc tristique, nisi quis aliquet accumsan, leo elit placerat lorem, nec aliquet felis ligula eget nisi. Nunc vestibulum mi vel massa ultrices, vel scelerisque quam blandit. Phasellus eu aliquet dolor. Lorem ipsum </label>
+            <div class="comment-options">
+              <label></label>
+              <p>27</p>
+              <i class="material-icons cm">thumb_up</i>
+              <i class="material-icons cm">thumb_down</i>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="./routeview.js"></script>
+  </body>
+</html>
